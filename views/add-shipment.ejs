@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Add Shipment</h1>
+    <form action="/add-shipment" method="POST" class="mt-4">
+      <div class="form-group">
+        <label for="name">Shipment Name:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="trackingNumber">Tracking Number:</label>
+        <input type="text" id="trackingNumber" name="trackingNumber" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-success btn-block">Add Shipment</button>
+    </form>
+    <br>
+    <a href="/shipments" class="btn btn-info">View Shipments</a>
+  </div>
+</body>
+</html>
